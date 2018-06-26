@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         editText_msn = (EditText)findViewById(R.id.editText2_msn);
         login_button = (Button)findViewById(R.id.button);
-        loadJSONFromAsset();
+        loadJSONFromAsset();//calling .json file
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
