@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.mivi.MainActivity">
+
+    <TextView
+        android:id="@+id/subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscription Information"
+        android:layout_marginTop="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/rem_data_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining data balance"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="27dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/product_price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:paddingTop="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/product_price"
+        android:layout_alignLeft="@+id/product_price"
+        android:layout_alignStart="@+id/product_price" />
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price "
+        android:paddingTop="5dp"
+
+        android:layout_centerVertical="true"
+       android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/rem_data_bal"
+        android:layout_alignStart="@+id/rem_data_bal" />
+
+    <TextView
+        android:id="@+id/balane_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rem_data_bal"
+        android:layout_toEndOf="@+id/rem_data_bal"
+        android:text=" : "
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:layout_toRightOf="@+id/rem_data_bal" />
+
+    <TextView
+        android:id="@+id/name_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/balane_dot"
+        android:layout_alignRight="@+id/balane_dot"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text=" : "
+        android:textSize="20dp"
+
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/price_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/name_dot"
+        android:layout_alignStart="@+id/name_dot"
+        android:layout_alignTop="@+id/product_name"
+        android:text=" : " />
+
+    <TextView
+        android:id="@+id/text_remaining_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/balane_dot"
+        android:layout_toEndOf="@+id/subscription"
+        android:layout_toRightOf="@+id/subscription"
+        android:text="TextView"
+        android:paddingTop="5dp"
+
+        android:layout_alignTop="@+id/balane_dot" />
+
+    <TextView
+        android:id="@+id/text_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:paddingTop="5dp"
+
+        android:layout_alignTop="@+id/product_price"
+        android:layout_alignLeft="@+id/text_remaining_balance"
+        android:layout_alignStart="@+id/text_remaining_balance"
+        android:layout_alignBottom="@+id/product_price" />
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_name"
+        android:layout_alignLeft="@+id/text_product_price"
+        android:layout_alignStart="@+id/text_product_price"
+        android:text="TextView"
+        android:paddingTop="5dp"
+
+        android:layout_alignTop="@+id/price_dot" />
+
+
+    <!-- information about their plan, also known as a subscription, remaining data balance of their subscription
+     information about the product that is related to the subscription, including the name and price of the product
+     any other information you think may be relevant to the customer
+ -->
+</RelativeLayout>
